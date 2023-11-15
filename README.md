@@ -87,7 +87,7 @@ After successful deployment with netlify, add new namesite that has been changed
 
 ![add namesite](/assets/img/ADD.png)
 
-Finally you can access the production version of [custome domain](https://2222222//). <b>NOT FINISHED YET</b>
+Finally you can access the production version of [custome domain](https://resonant-cuchufli-f8924d.netlify.app/). <b>NOT FINISHED YET</b>
 
 
 
