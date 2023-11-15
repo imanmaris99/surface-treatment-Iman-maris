@@ -5,6 +5,7 @@
     --second-color : #E5D283;
     --body-color : #F0F0F0;
     --navbar-color : #4F709C;
+    --fontbanner-color : #E5D283;
 
     --main-font: 'Open Sans', sans-serif;
     --heading-font : 'Raleway', sans-serif;
@@ -13,6 +14,8 @@
 body{
     background-color: var(--body-color);
     font-family: var(--main-font);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 *{
@@ -37,6 +40,8 @@ section{
     width: 100%;
     background-color: var(--navbar-color);
     z-index: 10;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .navbar .nav-wrapper{
@@ -106,7 +111,7 @@ section{
     padding-top: 120px;
     padding-bottom: 50px;
     position: relative;
-    background: #F0F0F0;
+    background: var(--body-color);
    
 }
 
@@ -155,15 +160,15 @@ section{
     font-weight: 700;
     transform: translate(-0%, -0%);
     color: var(--main-color);
-    text-shadow: 2px 2px 10px var(--main-color);
+    text-shadow: 2px 2px 10px var(--second-color);
 }
 .home-wrapper .heading span{
     font-size: 2.9rem;
-    color: var(--second-color);
+    color: var(--navbar-color);
 }
 .home-wrapper .subheading{
     font-size: 1.125rem;
-    color: #4a4a4a;
+    color: var(--main-color);
     max-width: 500px;
     margin: 25px 0;
 }
@@ -191,7 +196,7 @@ section{
     position: relative;
     width: 640px;
     height: 110px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-color);
     border-radius: 70px;
     margin-top: 50px;
     border: 3px solid #fff;
@@ -201,75 +206,6 @@ section{
     flex-wrap: wrap;
 }
 
-.form-panel img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.form-panel .title-form{
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--main-color);
-    color: #fff;
-    width: 300px;
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px 0;
-
-}
-.form-panel .form-location, .form-date{
-    position: relative;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.form-panel .form-location .loc, .form-date .cal{
- font-size: 1.6rem;
- color: var(--main-color);
-}
-
-.form-location select{
-    border: none;
-    appearance: none;
-    padding: 5px 10px;
-}
-
-.form-date input{
-    border: none;
-    padding: 5px 10px;
-    
-}
- .form-date  input::-webkit-inner-spin-button,
- .form-date  input::-webkit-calendar-picker-indicator {
-    background: transparent;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: 100%;
-    left: -25px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-   
-}
-
-.form-panel .btn-search{
-    position: relative;
-    background-color: var(--second-color);
-    padding: 20px;
-    border-radius: 50px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-panel .btn-search i{
-    font-size: 1.4rem;
-}
 .content-left .sugestion{
     font-size: 15px;
     margin-top: 20px;
@@ -304,19 +240,20 @@ section{
 }
 .service-wrapper .row1{
     text-align: center;
+    color: var(--navbar-color);
 }
 .service-wrapper .label-service{
     font-size: 20px;
     font-family: var(--heading-font);
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--second-color);
+    color: var(--navbar-color);
 }
 .service-wrapper .heading-service{
     font-size: 40px;
     font-family: var(--heading-font);
     font-weight: 700;
-    color: #4a4a4a;
+    color: var(--main-color);
     margin: 10px 0;
 }
 .service-wrapper .subheading-service{
@@ -326,7 +263,7 @@ section{
 .service-wrapper .row2{
     margin-top: 50px;
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--body-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -378,18 +315,19 @@ section{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   color: var(--second-color);
 }
 .row1 .label-produk{
     font-size: 20px;
     font-family: var(--heading-font);
     font-weight: 700;
-    color: var(--second-color);
+    color: var(--navbar-color);
 }
 .row1 .heading-produk{
     font-size: 40px;
     font-weight: 700;
     font-family: var(--heading-font);
-    color: #4a4a4a;
+    color: var(--main-color);
     margin-top: 10px;
 }
 .row1 .toggle-slider i{
@@ -444,7 +382,7 @@ section{
 }
 .kategori .price{
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--second-color);
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -484,7 +422,7 @@ section{
 
 /* Banner 1 start*/
 .banner1{
-    color: #fff;
+    color: var(--body-color);
     margin: 200px auto;
     background-color: var(--main-color);
     display: flex;
@@ -541,10 +479,11 @@ section{
 .content-statis .label-statis{
     font-size: 20px;
     font-family: var(--heading-font);
-    color: var(--second-color);
+    color: var(--navbar-color);
 }
 .content-statis .heading-statis{
     font-family: var(--heading-font);
+    color: var(--main-color);
     font-size: 40px;
     font-weight: 700;
     width: 100%;
@@ -553,6 +492,7 @@ section{
 .content-statis .subheading-statis{
     font-size: 20px;
     width: 90%;
+    color: var(--navbar-color);
 }
 .content-statis .angka-wrapper{
     display: flex;
@@ -568,9 +508,14 @@ section{
 .box-angka h1{
     font-family: var(--heading-font);
     font-weight: 800;
-    color: var(--second-color);
+    color: var(--main-color);
     font-size: 45px;
 }
+
+.box-angka p{
+    color: var(--navbar-color);
+}
+
 /* banner 1 end */
 
 /* TESTI START */
@@ -588,13 +533,13 @@ section{
     font-size: 25px;
     font-family: var(--heading-font);
     font-weight: 700;
-    color: var(--second-color);
+    color: var(--navbar-color);
 }
 .testi-wrapper .col-heading .heading-testi{
     font-size: 36px;
     font-family: var(--heading-font);
     font-weight: 700;
-    color: #4a4a4a;
+    color: var(--second-color);
     margin: 25px 0;
 }
 
@@ -605,13 +550,17 @@ section{
     color: var(--main-color);
 }
 
+.testi-wrapper .col-heading .subheading-testi{
+    color: var(--main-color);
+}
+
 .testi-wrapper .col-heading .heading-testi .logo span{
     font-size: 1.8rem;
     color: var(--second-color);
 }
 
 .col-slider-testi .card-testi{
-    background-color: #fff;
+    background-color: var(--body-color);
     border-radius: 15px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.103);
     padding: 30px;
@@ -622,7 +571,10 @@ section{
     position: relative;
     width: 70%;
     margin: auto;
+    color: var(--navbar-color);
 }
+
+
 .testi .bxs-quote-left{
     position: absolute;
     top: 0;
@@ -635,7 +587,7 @@ section{
 }
 .card-testi .status{
     margin-top: 5px;
-    color: var(--second-color);
+    color: var(--main-color);
 }
 /* TESTI END */
 
@@ -654,6 +606,7 @@ section{
     font-size: 36px;
     font-family: var(--heading-font);
     font-weight: 700;
+    color: var(--navbar-color);
 }
 .content-banner2 .subheading{
     font-size: 20px;
@@ -662,11 +615,12 @@ section{
 }
 .content-banner2 .disc{
     background-color: #c7772d;
-    color: #fff;
+    color: var(--body-color);
     font-family: var(--heading-font);
+    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.195);
     font-size: 30px;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 35px 10px;
     width: 50%;
     text-align: center;
     margin-top: 50px;
@@ -674,7 +628,7 @@ section{
 }
 .btn-banner2 .btn-regis{
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--body-color);
     font-family: var(--heading-font);
     font-size: 24px;
     padding: 20px 40px;
@@ -714,8 +668,14 @@ section{
 .col-1-footer .copy{
     margin-top: 50px;
 }
+
+.col-1-footer p{
+    color: var(--navbar-color);
+}
+
 .col-2-footer h3, .col-3-footer h3, .col-4-footer h3, .col-5-footer h3{
     font-size: 30px;
+    color: var(--main-color);
     font-family: var(--heading-font);
     font-weight: 700;
 }
@@ -727,17 +687,19 @@ section{
 }
 .col-2-footer li a , .col-3-footer li a, .col-4-footer li a{
     font-size: 18px;
- color: #4a4a4a;
+ color: var(--navbar-color);
 }
 .col-5-footer p{
     margin-top: 30px;
     font-size: 18px;
+    color: var(--navbar-color);
 }
 .form-input{
     padding: 20px 30px;
     margin-top: 50px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
+    border-radius: 20px 20px 10px 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.295);
 }
 .form-input input{
     border: none;
@@ -854,7 +816,7 @@ section{
         position: fixed;
         margin-top: -150px;
         width: 100%;
-        background-color: #BFDCAE;
+        background-color: var(--navbar-color);
         z-index: 10;
     }
 
@@ -1142,18 +1104,27 @@ section{
     .responsive3{
         background-size:contain;
         position: absolute;
-        filter: grayscale(70%);
+        filter: grayscale(0%);
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        width: 40%;
+        width: 50%;
         height: 50%;
-        transform: translate(-5%, 310%);
+        transform: translate(50%, 175%);
        
     }
     
-
+    .statistik-wrapper .content-img{
+        width: 900vw;
+    }
+    .statistik-wrapper .content-statis{
+        width: 700px;
+    }
+    .content-img img{
+        width: 100%;
+    }
+ 
    .testi-wrapper .col-slider-testi{
        margin: 30px auto;
        width: 100%;
@@ -1225,7 +1196,7 @@ section{
         font-size: 18px;
     }
     .form-input{
-        padding: 20px 30px;
+        padding: 20px 20px;
         margin-top: 50px;
         background-color: #fff;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
@@ -1307,4 +1278,12 @@ section{
   }
   /*------------------------------*/
 
+    [data-theme="dark"]{
+        --main-color : #F0F0F0;
+        --second-color : #4F709C;
+        --body-color : #213555;
+        --navbar-color : #E5D283;
+    }
 
+
+/*--------------------------------*/
