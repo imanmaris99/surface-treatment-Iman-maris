@@ -8,7 +8,7 @@
 <ol>
 <li>HTML Structure</li><ul>
 <li>index.html</li>
-<li>form.html</li>
+
 </ul>
 <li>Readme File</li>
 <li>Assets</li>
@@ -20,41 +20,60 @@
 
 </div>
 
-### ---
+```css
+```
 
 <div>
 <h2>Responsive Mode</h2>
 
 #### Dekstop Mode
-Dekstop mode use Dimension value from <b>1024 px and up</b>
+Dekstop mode use Dimension value from <b>1024 px and up</b> 
 
-<img src="assets/img/web.png">
+```css
+    @media screen and (min-width: 1024px) {}
+
+```
+
+    
+
+
+<img src="assets/img/dekstopmode.png">
 
 
 
 Dekstop result of generate a lighthouse report : 
 
-<img src="/assets/img/dekstop_lighthouse.png">
+<img src="/assets/img/lighthouse dekstop.png">
 
 </div>
 
 #### Tablet Mode
 Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-width 1024px</b>.
-<img src="assets/img/mobile.png">
+```ts
+    @media screen and (max-width: 1024px) {}
+    @media screen and (min-width: 780px) {}
+```
+    
+<img src="assets/img/tabletmode.png">
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/mobile_lighthouse.png">
+<img src="/assets/img/lighthouse mobile.png">
 
 </div>
 
 #### Mobile Mode
 Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-width: 780px</b>.
-<img src="assets/img/mobile.png">
+
+```css
+    @media screen and (max-width: 780px) {}
+    @media screen and (min-width: 390px) {}
+```
+<img src="assets/img/mobilemode.png">
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/mobile_lighthouse.png">
+<img src="/assets/img/lighthouse mobile.png">
 
 </div>
 
