@@ -147,26 +147,23 @@ Mobile result of generate a lighthouse report :
 
     9. <p>  <img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/copy dns cloudflare ke niagahoster.png" alt="copy dns cloudflare ke niagahoster">Copy Cloudflare nameserver.</p>
 
-    10. Paste Cloudflare nameserver to nameserver your custom domain and select "<b>simpan</b>".
+    10. Paste Cloudflare nameserver to nameserver your custom domain ([Niagahoster](https://hpanel.hostinger.com/)) and select "<b>simpan</b>".
 
     11. <p><img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/connect subdomain1.png" alt="connect netlify via cloudflare"> Open and sign in your account in netlify. Select "<b>site overview</b>" and copy url netlify subdomain (<i> example : resonant-cuchufli-f8924d.netlify.app </i>). </p>
 
-    12. Open and sign in your account in cloudflare. Select "<b>DNS -> Records</b>". Select "<b>Add Records</b>" and and complete some of the contents, among others:
+    12. Open and sign in your account in cloudflare. Select "<b>DNS -> Records</b>". 
+
+    13. Select "<b>Add Records</b>" and and complete some of the contents, among others:
     <b>Type = CNAME ; Name (Required) = milestone1 ; Target (Required) = paste url netlify subdomain (*example : resonant-cuchufli-f8924d.netlify.app*) </b> and select "<b>save</b>".
+    Wait for domain name system access until it is approved.
 
-    13. Wait for domain name system access until it is approved.
+     
+    14. <p><img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/connect subdomain2.png">Enter the custom domain name (example : <i>milestone1.imanmaris.tech</i>) that has been purchased to register on Netlify. Select "<b>*verify*</b>".</p>
+    15. Check production domain status and SSL/TLS certificate.
+    Domain production awaits verification.
 
-    <img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/netlify manage domain1.png" alt="copy dns cloudflare ke niagahoster">
-
-    14. Enter the custom domain name that has been purchased to register on Netlify. Select "<b>*verify*</b>".
-
-    15. Check production domain status.
-
-    <img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/connect netlify with cloudflare2.png" alt="connect netlify with cloudflare2">
-
-    16. Domain production awaits verification.
-
-    17. Domain production has been verified and is ready to be published.
+      
+    16. <p><img style="padding-bottom: 2%; padding-top: 3%;" width="100%" src="./assets/img/subdomain custom3.png">Domain production has been "<b>*verified*</b>" and is ready to be published.</p>
 
 <br>
 
@@ -193,5 +190,5 @@ Mobile result of generate a lighthouse report :
 ---
 
 
-<p align="center">last created on November 15, 2023</p>
+<p align="center">last created on November 16, 2023</p>
 <p align="center"><i>copyright &copy; 2023</i></p>
