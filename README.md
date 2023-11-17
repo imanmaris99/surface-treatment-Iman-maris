@@ -23,14 +23,70 @@
 ```css
 ```
 
+<div align="center" style="margin-bottom:10%;">
+
+## My Wesbsite -> Surface Plating Services
+
+### About Content 
+
+Surface plating solution (S.P.S shop) is the content that discusses material final processing services in various ways, especially special treatment of materials whose main ingredient is iron. The aim that the resulting material will be strong and corrosion resistant.
+    <p align="center">
+    <img style="padding-bottom: 2%;" width="80%" src="./assets/img/darkmode.png" alt="Anodizing">
+    </p>
+
+
+### Content Structure
+
+#### A. Header Structure
+
+Heading contains the logo, menu navigation in desktop <b>(width : 1024 px and up)</b>, tablet <b>(width : 780 px - 1024 px)</b> and mobile <b>(width : 390 px - 780 px)</b> modes, and shop front display.
+
+```css
+    @media screen and (min-width: 1024px) {}
+
+```
+
+<img src="assets/img/header.png">
+
+<br><br>
+
+#### B. Main Body Structure
+
+Main Display is divided into 6 contents, including 6 sections 
+<p style="font-size:0.rem; font-weight: 650;">section class="service", section class="produk", section class="banner1 container", section class="statistik", section class="testi", section class="banner2"</p>
+
+```css
+    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
+
+```
+
+<img align="center"><img width="35%" src="https://e7.pngegg.com/pngimages/348/63/png-clipart-under-construction-under-construction-thumbnail.png">
+
+<br><br>
+
+#### C. Footer Structure
+
+The footer contains information about company information and there are also input messages in the form of criticism or suggestions and others. 
+
+```css
+    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
+
+```    
+
+<img src="assets/img/footer-dekstop.png">
+
+</div>
+
+
 <div>
+
 <h2>Responsive Mode</h2>
 
 #### Dekstop Mode
 Dekstop mode use Dimension value from <b>1024 px and up</b> 
 
 ```css
-    @media screen and (min-width: 1024px) {}
+    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
 
 ```
 
@@ -48,7 +104,7 @@ Dekstop result of generate a lighthouse report :
 </div>
 
 #### Tablet Mode
-Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-width 1024px</b>.
+Tablet mode use dimension size resposivity in <b>max-width 1024px</b>.
 ```ts
     @media screen and (max-width: 1024px) {}
     @media screen and (min-width: 780px) {}
@@ -58,7 +114,7 @@ Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-wi
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/lighthouse mobile.png">
+<img src="/assets/img/dekstopmode2.png">
 
 </div>
 
@@ -73,7 +129,7 @@ Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-wi
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/lighthouse mobile.png">
+<img src="/assets/img/mobilemode2.png">
 
 </div>
 
@@ -203,11 +259,11 @@ Mobile result of generate a lighthouse report :
 <br>
 
 
-<h4 align="center"><img width="55%" src="https://e7.pngegg.com/pngimages/348/63/png-clipart-under-construction-under-construction-thumbnail.png"></h4>
+<h4 align="center">last created on November 17, 2023</h4>
 
 
 ---
 
 
-<p align="center">last created on November 16, 2023</p>
+<p align="center"></p>
 <p align="center"><i>copyright &copy; 2023</i></p>

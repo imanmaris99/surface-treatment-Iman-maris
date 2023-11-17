@@ -17,6 +17,10 @@
     --heading-font : 'Raleway', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--body-color);
     font-family: var(--main-font);
@@ -452,10 +456,23 @@ section{
     color: var(--main-color);
     padding: 15px 30px;
     background-color: var(--diskon-color);
-    box-shadow: 0px 1px 20px var(--diskon-color);
+    box-shadow: 0px 1px 5px var(--diskon-color);
     border-radius: 15px;
     margin: 20px 0;
+    animation-name: special;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:cubic-bezier(0.35, 0.62, 0.65, 0.3);
 }
+
+@keyframes special {
+
+    0%   {box-shadow: 0px 1px 20px var(--diskon-color);}
+    50%  {box-shadow: 0px 1px 50px var(--diskon-color);}
+    100% {box-shadow: 0px 1px 20px var(--diskon-color);}
+  
+  }
+
 .banner1 p{
     font-size: 20px;
     font-family: var(--heading-font);
@@ -703,6 +720,12 @@ section{
     margin-top: 35px;
     margin-bottom: 30px;
 }
+.col-1-footer address{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: 400px;
+    color: var(--main-color);
+}
 
 .col-1-footer p{
     color: var(--navbar-color);
@@ -767,6 +790,11 @@ section{
 /*  */
 
 @media screen and (max-width: 1024px) {
+
+    main{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .navbar .nav-wrapper{
         padding: 0 30px;
     }
@@ -835,13 +863,41 @@ section{
     .statistik-wrapper{
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: stretch;
     }
+
     .statistik-wrapper .content-img{
+        margin: auto;
         width:80vw;
-        transform: translate(450px, 300px);
+        transform: translate(0px, 50px);
+    }
+
+    .content-statis .angka-wrapper{
+        margin: auto;
+        display: flex;
+        align-items: flex-end;
+        width: 90%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .banner2-wrapper{
+        padding: 5rem 3rem;
+    }
+
+    .footer{
+        padding: 10px 20px;
+    }
+    .footer .footer-wrapper{
+        gap: 25px;
+    }
+
+    .col-2-footer, .col-3-footer {
+        padding-top: 2.5%;
     }
 
 }
@@ -1058,6 +1114,10 @@ section{
     .footer-wrapper .col-4-footer .col-5-footer{
         margin-top: 20px;
     }
+
+    .col-2-footer, .col-3-footer {
+        padding-top: 0%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1170,6 +1230,11 @@ section{
        
     }
     
+    .statistik-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
     .statistik-wrapper .content-img{
         width: 900vw;
     }
@@ -1309,8 +1374,22 @@ section{
   }
   input:checked + .slider {
     background-color: #66bb6a;
+    box-shadow: 0px 1px 5px #5ce062;
+    animation-name: darkmode;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:cubic-bezier(0.35, 0.62, 0.65, 0.3);
+    }
+
+    @keyframes darkmode {
+
+        0%   {box-shadow: 0px 1px 20px #25e32f;}
+        50%  {box-shadow: 0px 1px 50px #1be425;}
+        100% {box-shadow: 0px 1px 20px #05ea11;}
     
-  }
+    }
+
+
   input:checked + .slider:before {
     transform: translateZ(-21px);
     box-shadow: 0px -1.5px #888888;
