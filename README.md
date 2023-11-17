@@ -31,7 +31,7 @@
 
 Surface plating solution (S.P.S shop) is the content that discusses material final processing services in various ways, especially special treatment of materials whose main ingredient is iron. The aim that the resulting material will be strong and corrosion resistant.
     <p align="center">
-    <img style="padding-bottom: 2%;" width="80%" src="./assets/img/darkmode.png" alt="Anodizing">
+    <img style="padding-bottom: 2%;" width="100%" src="./assets/img/darkmode.png" alt="Anodizing">
     </p>
 
 
@@ -39,28 +39,28 @@ Surface plating solution (S.P.S shop) is the content that discusses material fin
 
 #### A. Header Structure
 
-Heading contains the logo, menu navigation in desktop <b>(width : 1024 px and up)</b>, tablet <b>(width : 780 px - 1024 px)</b> and mobile <b>(width : 390 px - 780 px)</b> modes, and shop front display.
+Heading contains darkmode switcher, the shop logo, menu navigation in desktop <b>(width : 1024 px and up)</b>, tablet <b>(width : 780 px - 1024 px)</b> and mobile <b>(width : 390 px - 780 px)</b> modes, and shop front display.
 
 ```css
-    @media screen and (min-width: 1024px) {}
+   The screen shot uses mode @media screen and (min-width: 1024px) {}
 
 ```
 
-<img src="assets/img/header.png">
+<img style="padding-bottom: 2%; padding-top: 3%;" src="assets/img/header.png">
 
 <br><br>
 
 #### B. Main Body Structure
 
 Main Display is divided into 6 contents, including 6 sections 
-<p style="font-size:0.rem; font-weight: 650;">section class="service", section class="produk", section class="banner1 container", section class="statistik", section class="testi", section class="banner2"</p>
+<p style="font-size:0.rem; font-weight: 650;">1. section class="service", 2. section class="produk", 3. section class="banner1 container", 4. section class="statistik", 5. section class="testi", 6. section class="banner2"</p>
 
 ```css
-    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
+   The screen shot uses mode @media screen and (min-width: 1024px) {}
 
 ```
 
-<img align="center"><img width="35%" src="https://e7.pngegg.com/pngimages/348/63/png-clipart-under-construction-under-construction-thumbnail.png">
+<img style="padding-bottom: 2%; padding-top: 3%;" align="center" width="100%" src="./assets/img/main-section.png">
 
 <br><br>
 
@@ -69,11 +69,62 @@ Main Display is divided into 6 contents, including 6 sections
 The footer contains information about company information and there are also input messages in the form of criticism or suggestions and others. 
 
 ```css
-    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
+   The screen shot uses mode @media screen and (min-width: 1024px) {}
 
 ```    
 
-<img src="assets/img/footer-dekstop.png">
+<img style="padding-bottom: 2%; padding-top: 3%;" src="assets/img/footer-dekstop.png">
+
+
+### Tools Used to Help
+
+#### A. Compress and Convert Picture
+
+Helps improve the performance of the website created later.
+    <p align="center">
+    <img style="padding-bottom: 2%;" width="100%" src="./assets/img/tools for picture.png" alt="Anodizing">
+    </p>
+
+#### B. Source of The Logo or Symbol Used
+
+Helps add unique external logos with [unpkg.com](https://unpkg.com/). 
+Adding this coding in the head section of the HTML to access the logo library, 
+
+```html
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+
+            <!-- Link Imoticon for Symbols -->
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+        </head>
+
+``` 
+
+<p align="center">
+    <img style="padding-bottom: 4%; padding-top: 4%;" width="100%" src="./assets/img/source simbol.png" alt="Anodizing">
+</p>
+
+
+#### C. Source of The Javascript to Help Create a Menu Slider
+
+Helps add unique external JS with [unpkg.com](https://unpkg.com/). 
+Adding this coding in the body section of the HTML to access the logo library, 
+
+```html
+        <!DOCTYPE html>
+        <html lang="en">
+
+            <body>
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            </body>
+
+        </html>
+
+``` 
 
 </div>
 
@@ -86,20 +137,20 @@ The footer contains information about company information and there are also inp
 Dekstop mode use Dimension value from <b>1024 px and up</b> 
 
 ```css
-    @media screen and (min-width: 1024px) {wait, it's still being prepared..}
+    @media screen and (min-width: 1024px) {}
 
 ```
 
     
 
 
-<img src="assets/img/dekstopmode.png">
+<img style="padding-bottom: 4%; padding-top: 4%;"  src="assets/img/dekstopmode.png">
 
 
 
 Dekstop result of generate a lighthouse report : 
 
-<img src="/assets/img/lighthouse dekstop.png">
+<img style="padding-bottom: 3%; padding-top: 1%;" src="/assets/img/lighthouse dekstop.png">
 
 </div>
 
@@ -110,11 +161,11 @@ Tablet mode use dimension size resposivity in <b>max-width 1024px</b>.
     @media screen and (min-width: 780px) {}
 ```
     
-<img src="assets/img/tabletmode.png">
+<img style="padding-bottom: 3%; padding-top: 3%;" src="assets/img/tabletmode.png">
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/dekstopmode2.png">
+<img style="padding-bottom: 3%; padding-top: 1%;" src="/assets/img/dekstopmode2.png">
 
 </div>
 
@@ -125,11 +176,11 @@ Mobile mode use Dimension from Samsung Galaxy with size resposivity in <b>max-wi
     @media screen and (max-width: 780px) {}
     @media screen and (min-width: 390px) {}
 ```
-<img src="assets/img/mobilemode.png">
+<img style="padding-bottom: 3%; padding-top: 2%;" src="assets/img/mobilemode.png">
 
 Mobile result of generate a lighthouse report : 
 
-<img src="/assets/img/mobilemode2.png">
+<img style="padding-bottom: 3%; padding-top: 1%;" src="/assets/img/mobilemode2.png">
 
 </div>
 
